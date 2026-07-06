@@ -24,13 +24,13 @@ function makeCrud(Model, { slugField = 'slug', nameField = 'name', publicFilter 
     }),
     get: asyncHandler(async (req, res) => {
       const isId = /^[0-9a-fA-F]{24}$/.test(req.params.id);
-      const q = isId ? { _id: req.params.id } : { [slugField]: req.params.id };
+      const q = isId || !slugField ? { _id: req.params.id } : { [slugField]: req.params.id };
       const item = await Model.findOne({ ...q, isDeleted: false });
       if (!item) throw new AppError('Resource not found', 404);
       api({ res, message: 'Fetched successfully', data: item });
     }),
     update: asyncHandler(async (req, res) => {
-      if (req.body[nameField] && !req.body[slugField]) req.body[slugField] = slug(req.body[nameField]);
+      if (slugField && req.body[nameField] && !req.body[slugField]) req.body[slugField] = slug(req.body[nameField]);
       const item = await Model.findByIdAndUpdate(req.params.id, req.body, { new: true, runValidators: true });
       if (!item) throw new AppError('Resource not found', 404);
       api({ res, message: 'Updated successfully', data: item });

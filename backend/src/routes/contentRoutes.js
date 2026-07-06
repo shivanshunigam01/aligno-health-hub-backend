@@ -20,6 +20,8 @@ r.get('/posters', c.posters.list);
 r.get('/posters/:id', c.posters.get);
 r.get('/trust-strip', c.trustStrip.list);
 r.get('/trust-strip/:id', c.trustStrip.get);
+r.get('/testimonials', c.testimonials.list);
+r.get('/testimonials/:id', c.testimonials.get);
 r.get('/cms', c.cms.get);
 r.get('/footer', c.footer.get);
 r.get('/contact-info', c.contact.get);

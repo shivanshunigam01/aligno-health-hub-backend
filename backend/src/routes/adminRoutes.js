@@ -43,6 +43,10 @@ r.delete('/posters/:id', c.posters.remove);
 r.get('/trust-strip', (req, _res, next) => { req.query.admin = 'true'; next(); }, c.trustStrip.list);
 r.patch('/trust-strip/:id', c.trustStrip.update);
 r.delete('/trust-strip/:id', c.trustStrip.remove);
+r.get('/testimonials', (req, _res, next) => { req.query.admin = 'true'; next(); }, c.testimonials.list);
+r.post('/testimonials', c.testimonials.create);
+r.patch('/testimonials/:id', c.testimonials.update);
+r.delete('/testimonials/:id', c.testimonials.remove);
 
 // Singleton CMS settings
 r.patch('/cms', c.cms.update);

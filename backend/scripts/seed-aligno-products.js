@@ -87,9 +87,9 @@ async function main() {
       bodyPart: item.bodyPart,
       painArea: item.painArea,
       sku: item.sku,
-      // Prices left unset (0) — fill in via admin panel when ready
-      mrp: item.price ?? 0,
-      sellingPrice: item.discountPrice ?? 0,
+      // Default catalog price — override per product in aligno-catalog.json if needed
+      mrp: item.price ?? 100,
+      sellingPrice: item.discountPrice ?? item.price ?? 100,
       stock: item.stock ?? 0,
       sizes: item.sizes,
       shortDescription: item.shortDescription,

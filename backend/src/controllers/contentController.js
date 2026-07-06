@@ -7,6 +7,7 @@ const { BodyPart, PainArea, Activity } = require('../models/Taxonomy');
 const Blog = require('../models/Blog');
 const Poster = require('../models/Poster');
 const TrustStrip = require('../models/TrustStrip');
+const Testimonial = require('../models/Testimonial');
 const api = require('../utils/apiResponse');
 const asyncHandler = require('../utils/asyncHandler');
 const AppError = require('../utils/AppError');
@@ -18,6 +19,11 @@ const activity = makeCrud(Activity, { publicFilter: () => ({ enabled: true }) })
 const blog = makeCrud(Blog, { publicFilter: () => ({ published: true }) });
 const poster = makeCrud(Poster, { publicFilter: () => ({ enabled: true }) });
 const trustStrip = makeCrud(TrustStrip, { publicFilter: () => ({ enabled: true }) });
+const testimonial = makeCrud(Testimonial, {
+  nameField: 'customerName',
+  slugField: null,
+  publicFilter: () => ({ approved: true }),
+});
 const cms = makeSingleton(CmsContent, 'homepage');
 const footer = makeSingleton(FooterContent, 'main');
 const contact = makeSingleton(ContactInfo, 'main');
@@ -28,6 +34,7 @@ exports.activities = activity;
 exports.blogs = blog;
 exports.posters = poster;
 exports.trustStrip = trustStrip;
+exports.testimonials = testimonial;
 exports.cms = cms;
 exports.footer = footer;
 exports.contact = contact;
