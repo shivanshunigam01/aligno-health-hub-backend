@@ -1,0 +1,2 @@
+const express=require('express'); const validate=require('../middlewares/validate'); const {protect,adminOnly}=require('../middlewares/auth');
+module.exports=(controller,validator=[])=>{const r=express.Router(); r.get('/',controller.list); r.get('/:id',controller.get); r.post('/',protect,adminOnly,validator,validate,controller.create); r.patch('/:id',protect,adminOnly,controller.update); r.delete('/:id',protect,adminOnly,controller.remove); r.patch('/:id/restore',protect,adminOnly,controller.restore); return r};

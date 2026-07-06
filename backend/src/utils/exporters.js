@@ -1,0 +1,4 @@
+const ExcelJS=require('exceljs'); const PDFDocument=require('pdfkit'); const {createObjectCsvStringifier}=require('csv-writer');
+exports.toCSV=(rows)=> rows.length? createObjectCsvStringifier({header:Object.keys(rows[0]).map(k=>({id:k,title:k}))}).getHeaderString()+createObjectCsvStringifier({header:Object.keys(rows[0]).map(k=>({id:k,title:k}))}).stringifyRecords(rows):'';
+exports.toExcelBuffer=async(rows)=>{const wb=new ExcelJS.Workbook();const ws=wb.addWorksheet('Report'); if(rows.length){ws.columns=Object.keys(rows[0]).map(k=>({header:k,key:k,width:22})); ws.addRows(rows);} return wb.xlsx.writeBuffer();};
+exports.toPDFBuffer=(title,rows)=>new Promise(resolve=>{const doc=new PDFDocument({margin:30});const chunks=[];doc.on('data',c=>chunks.push(c));doc.on('end',()=>resolve(Buffer.concat(chunks)));doc.fontSize(16).text(title);doc.moveDown();rows.forEach((r,i)=>doc.fontSize(9).text(`${i+1}. ${JSON.stringify(r)}`));doc.end();});

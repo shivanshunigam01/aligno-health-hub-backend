@@ -1,0 +1,4 @@
+const mongoose=require('mongoose'); const softDelete={isDeleted:{type:Boolean,default:false,index:true},deletedAt:Date};
+
+const itemSchema=new mongoose.Schema({product:{type:mongoose.Schema.Types.ObjectId,ref:'Product',required:true},quantity:{type:Number,required:true,min:1},price:{type:Number,required:true},mrp:Number,gst:Number},{_id:false});
+const cartSchema=new mongoose.Schema({user:{type:mongoose.Schema.Types.ObjectId,ref:'User',index:true},guestId:{type:String,index:true},items:[itemSchema],coupon:{type:mongoose.Schema.Types.ObjectId,ref:'Coupon'},couponCode:String,discount:{type:Number,default:0},tax:{type:Number,default:0},shippingCharge:{type:Number,default:0},subtotal:{type:Number,default:0},total:{type:Number,default:0},...softDelete},{timestamps:true}); cartSchema.index({user:1,guestId:1}); module.exports=mongoose.model('Cart',cartSchema);

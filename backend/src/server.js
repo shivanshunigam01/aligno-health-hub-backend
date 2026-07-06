@@ -1,0 +1,3 @@
+const http=require('http'); const {Server}=require('socket.io'); const app=require('./app'); const connectDB=require('./config/db'); const logger=require('./config/logger'); require('./cron');
+const PORT=process.env.PORT||5000;
+(async()=>{await connectDB(); const server=http.createServer(app); const io=new Server(server,{cors:{origin:true,credentials:true}}); app.set('io',io); io.on('connection',socket=>{socket.on('join',room=>socket.join(room));}); server.listen(PORT,()=>logger.info(`Aligno backend running on ${PORT}`)); process.on('unhandledRejection',e=>{logger.error(e); server.close(()=>process.exit(1));});})();

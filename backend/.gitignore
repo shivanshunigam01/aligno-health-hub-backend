@@ -1,0 +1,9 @@
+node_modules/
+.env
+src/temp/*
+!src/temp/.gitkeep
+src/logs/*
+!src/logs/.gitkeep
+coverage/
+.DS_Store
+*.log

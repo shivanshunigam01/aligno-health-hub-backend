@@ -1,0 +1,408 @@
+[
+  {
+    "name": "Abdominal Support",
+    "slug": "abdominal-support",
+    "sku": "ALN-ABD-001",
+    "categorySlug": "orthopedic-supports",
+    "bodyPart": "chest",
+    "painArea": "back",
+    "stock": 50,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "shortDescription": "Medical-grade abdominal binder for post-surgery recovery, hernia support and core stability.",
+    "longDescription": "Aligno Abdominal Support provides firm yet comfortable compression around the abdomen and lower back. Ideal for post-operative recovery, mild hernia support, pregnancy-related discomfort and daily core stability. Made with breathable, skin-friendly elastic fabric that stays in place without rolling.",
+    "benefits": [
+      "Firm abdominal compression",
+      "Post-surgery recovery aid",
+      "Breathable medical-grade fabric",
+      "Adjustable hook-and-loop closure",
+      "All-day comfort"
+    ],
+    "specifications": {
+      "Material": "Elastic & cotton blend",
+      "Closure": "Hook & loop",
+      "Wash Care": "Hand wash, air dry"
+    },
+    "bestSeller": false,
+    "featured": true,
+    "enabled": true
+  },
+  {
+    "name": "Ankle Support",
+    "slug": "ankle-support",
+    "sku": "ALN-ANK-002",
+    "categorySlug": "orthopedic-supports",
+    "bodyPart": "ankle",
+    "painArea": "ankle",
+    "stock": 60,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "shortDescription": "Lightweight ankle brace for sprains, swelling and sports injury prevention.",
+    "longDescription": "Aligno Ankle Support wraps securely around the ankle joint to limit excessive movement while allowing natural mobility. Perfect for ankle sprains, ligament strain, swelling and preventive support during walking, running and sports activities.",
+    "benefits": [
+      "360° ankle stability",
+      "Reduces swelling",
+      "Slim fit under footwear",
+      "Elastic stretch for comfort",
+      "Ideal for sports & daily use"
+    ],
+    "specifications": {
+      "Material": "Neoprene blend",
+      "Fit": "Universal left/right",
+      "Wash Care": "Hand wash"
+    },
+    "bestSeller": true,
+    "featured": true,
+    "enabled": true
+  },
+  {
+    "name": "Cervical Collar",
+    "slug": "cervical-collar",
+    "sku": "ALN-CER-003",
+    "categorySlug": "orthopedic-supports",
+    "bodyPart": "neck",
+    "painArea": "neck",
+    "stock": 45,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "shortDescription": "Soft cervical collar for neck pain, whiplash recovery and posture support.",
+    "longDescription": "Aligno Cervical Collar gently immobilizes the neck to relieve muscle strain, cervical spondylosis discomfort and post-injury recovery. Contoured design with soft foam padding ensures comfort during extended wear while maintaining proper neck alignment.",
+    "benefits": [
+      "Neck pain relief",
+      "Soft foam padding",
+      "Contoured chin support",
+      "Velcro adjustable fit",
+      "Lightweight daily wear"
+    ],
+    "specifications": {
+      "Material": "PU foam & cotton cover",
+      "Height": "Adjustable",
+      "Wash Care": "Wipe clean / hand wash cover"
+    },
+    "featured": true,
+    "enabled": true
+  },
+  {
+    "name": "Contoured LS Support Belt",
+    "slug": "contoured-ls-support-belt",
+    "sku": "ALN-CLS-004",
+    "categorySlug": "orthopedic-supports",
+    "bodyPart": "back",
+    "painArea": "back",
+    "stock": 40,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "shortDescription": "Anatomically contoured lumbosacral belt with dual compression straps for lower back pain.",
+    "longDescription": "Aligno Contoured LS Support Belt is ergonomically shaped to match the natural curve of your spine. Dual adjustable straps deliver targeted compression to the lumbar and sacral region, ideal for chronic lower back pain, disc discomfort and heavy lifting protection.",
+    "benefits": [
+      "Anatomical contour fit",
+      "Dual compression straps",
+      "Lumbar & sacral support",
+      "Breathable mesh panels",
+      "Suitable for work & travel"
+    ],
+    "specifications": {
+      "Material": "Elastic with rigid stays",
+      "Stays": "4 flexible stays",
+      "Closure": "Double strap"
+    },
+    "bestSeller": true,
+    "enabled": true
+  },
+  {
+    "name": "Elbow Support",
+    "slug": "elbow-support",
+    "sku": "ALN-ELB-005",
+    "categorySlug": "orthopedic-supports",
+    "bodyPart": "elbow",
+    "painArea": "elbow",
+    "stock": 55,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "shortDescription": "Compression elbow sleeve for joint pain, arthritis and repetitive strain relief.",
+    "longDescription": "Aligno Elbow Support provides gentle compression and warmth to the elbow joint. Helps manage arthritis pain, tendonitis, gym injuries and repetitive strain from typing or sports. Seamless knit design ensures a snug, non-bulky fit.",
+    "benefits": [
+      "Targeted elbow compression",
+      "Warmth therapy effect",
+      "Seamless knit design",
+      "Unisex fit",
+      "Easy to wear all day"
+    ],
+    "specifications": {
+      "Material": "Elastic knit",
+      "Side": "Universal",
+      "Thickness": "Medium"
+    },
+    "enabled": true
+  },
+  {
+    "name": "Functional Knee Support",
+    "slug": "functional-knee-support",
+    "sku": "ALN-FKN-006",
+    "categorySlug": "orthopedic-supports",
+    "bodyPart": "knee",
+    "painArea": "knee",
+    "stock": 35,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "shortDescription": "Advanced functional knee brace with patella opening for active recovery and sports.",
+    "longDescription": "Aligno Functional Knee Support features a patella opening, side stabilizers and 4-way stretch fabric for maximum support during movement. Designed for ACL/MCL mild instability, post-surgery rehab, arthritis and high-impact sports.",
+    "benefits": [
+      "Patella stabilizing ring",
+      "Side stabilizer stays",
+      "4-way stretch fabric",
+      "Sports-grade support",
+      "Non-slip silicone grip"
+    ],
+    "specifications": {
+      "Material": "Neoprene & nylon",
+      "Stabilizers": "Dual side stays",
+      "Patella": "Open ring design"
+    },
+    "bestSeller": true,
+    "featured": true,
+    "enabled": true
+  },
+  {
+    "name": "Knee Support",
+    "slug": "knee-support",
+    "sku": "ALN-KNE-007",
+    "categorySlug": "orthopedic-supports",
+    "bodyPart": "knee",
+    "painArea": "knee",
+    "stock": 70,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "shortDescription": "Classic knee sleeve for pain relief, swelling control and everyday joint support.",
+    "longDescription": "Aligno Knee Support is a versatile compression sleeve that wraps the knee joint for pain relief, swelling reduction and warmth therapy. Suitable for arthritis, minor sprains, gym workouts and long hours of standing or walking.",
+    "benefits": [
+      "360° knee compression",
+      "Reduces joint swelling",
+      "Warmth for pain relief",
+      "Lightweight & breathable",
+      "Easy pull-on design"
+    ],
+    "specifications": {
+      "Material": "Elastic & spandex blend",
+      "Design": "Closed sleeve",
+      "Fit": "Contoured knit"
+    },
+    "bestSeller": true,
+    "enabled": true
+  },
+  {
+    "name": "LS Belt Eco",
+    "slug": "ls-belt-eco",
+    "sku": "ALN-LSE-008",
+    "categorySlug": "orthopedic-supports",
+    "bodyPart": "back",
+    "painArea": "back",
+    "stock": 50,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "shortDescription": "Economical lumbosacral belt for daily lower back pain relief and posture support.",
+    "longDescription": "Aligno LS Belt Eco offers essential lumbar support at an affordable price. Wide elastic band with adjustable tension helps reduce lower back strain during sitting, driving, lifting and household chores. A practical choice for everyday back care.",
+    "benefits": [
+      "Affordable daily support",
+      "Wide compression band",
+      "Adjustable tension",
+      "Lightweight design",
+      "Suitable for all ages"
+    ],
+    "specifications": {
+      "Material": "Elastic cotton blend",
+      "Width": "20 cm",
+      "Closure": "Single strap"
+    },
+    "newArrival": true,
+    "enabled": true
+  },
+  {
+    "name": "Lumbar Sacral Support Belt",
+    "slug": "lumbar-sacral-support-belt",
+    "sku": "ALN-LSB-009",
+    "categorySlug": "orthopedic-supports",
+    "bodyPart": "back",
+    "painArea": "back",
+    "stock": 42,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "shortDescription": "Premium lumbar sacral belt with rigid stays for chronic back pain and heavy work.",
+    "longDescription": "Aligno Lumbar Sacral Support Belt combines firm elastic compression with semi-rigid stays to stabilize the lower spine. Recommended for chronic lumbago, sciatica support, warehouse work, driving and postpartum back care.",
+    "benefits": [
+      "Semi-rigid spinal stays",
+      "Firm lumbar compression",
+      "Reduces spinal load",
+      "Durable construction",
+      "Professional-grade support"
+    ],
+    "specifications": {
+      "Material": "Elastic with PP stays",
+      "Stays": "6 semi-rigid stays",
+      "Width": "24 cm"
+    },
+    "featured": true,
+    "enabled": true
+  },
+  {
+    "name": "Pouch Arm Sling",
+    "slug": "pouch-arm-sling",
+    "sku": "ALN-PAS-010",
+    "categorySlug": "orthopedic-supports",
+    "bodyPart": "shoulder",
+    "painArea": "shoulder",
+    "stock": 65,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "shortDescription": "Comfortable arm pouch sling for shoulder injuries, fractures and post-surgery immobilization.",
+    "longDescription": "Aligno Pouch Arm Sling holds the arm securely in a elevated position to reduce shoulder strain after injury, fracture or surgery. Padded neck strap and breathable arm pouch ensure comfort during extended recovery periods.",
+    "benefits": [
+      "Secure arm immobilization",
+      "Padded neck strap",
+      "Breathable arm pouch",
+      "Adjustable height",
+      "Left & right arm use"
+    ],
+    "specifications": {
+      "Material": "Cotton & foam padding",
+      "Side": "Universal",
+      "Strap": "Adjustable"
+    },
+    "enabled": true
+  },
+  {
+    "name": "Tennis Elbow Support",
+    "slug": "tennis-elbow-support",
+    "sku": "ALN-TEL-011",
+    "categorySlug": "orthopedic-supports",
+    "bodyPart": "elbow",
+    "painArea": "elbow",
+    "stock": 48,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "Universal"
+    ],
+    "shortDescription": "Targeted forearm strap for tennis elbow, golfer's elbow and tendon pain relief.",
+    "longDescription": "Aligno Tennis Elbow Support applies focused pressure on the forearm extensor muscles to relieve pain from tennis elbow (lateral epicondylitis) and golfer's elbow. Compact strap design allows full arm movement while delivering effective pain relief.",
+    "benefits": [
+      "Targeted pressure pad",
+      "Relieves tendon pain",
+      "Compact strap design",
+      "Adjustable Velcro fit",
+      "Ideal for sports & desk work"
+    ],
+    "specifications": {
+      "Material": "Neoprene pad & nylon strap",
+      "Pressure": "Adjustable pad",
+      "Use": "Forearm strap"
+    },
+    "bestSeller": true,
+    "enabled": true
+  },
+  {
+    "name": "Wrist Wrap",
+    "slug": "wrist-wrap",
+    "sku": "ALN-WRW-012",
+    "categorySlug": "orthopedic-supports",
+    "bodyPart": "wrist",
+    "painArea": "wrist",
+    "stock": 80,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "Universal"
+    ],
+    "shortDescription": "Elastic wrist wrap for sprains, carpal tunnel relief and typing strain.",
+    "longDescription": "Aligno Wrist Wrap provides adjustable compression and stability to the wrist joint. Helps manage wrist sprains, carpal tunnel discomfort, repetitive strain from typing and light sports activities. Low-profile design fits under watches and gloves.",
+    "benefits": [
+      "Adjustable wrap compression",
+      "Wrist joint stability",
+      "Low-profile design",
+      "Breathable material",
+      "Universal left/right"
+    ],
+    "specifications": {
+      "Material": "Elastic wrap",
+      "Length": "45 cm wrap",
+      "Closure": "Hook & loop"
+    },
+    "enabled": true
+  },
+  {
+    "name": "Wrist Wrap with Thumb",
+    "slug": "wrist-wrap-with-thumb",
+    "sku": "ALN-WRT-013",
+    "categorySlug": "orthopedic-supports",
+    "bodyPart": "wrist",
+    "painArea": "wrist",
+    "stock": 75,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "Universal"
+    ],
+    "shortDescription": "Extended wrist support with thumb loop for enhanced stability and pain relief.",
+    "longDescription": "Aligno Wrist Wrap with Thumb extends support to both the wrist and thumb base (CMC joint). Ideal for De Quervain's tenosynovitis, thumb sprains, gaming/typing strain and post-injury recovery. Integrated thumb loop prevents slip and adds stabilizing support.",
+    "benefits": [
+      "Wrist + thumb support",
+      "Integrated thumb loop",
+      "Anti-slip design",
+      "Extended compression zone",
+      "Ideal for RSI & gaming"
+    ],
+    "specifications": {
+      "Material": "Elastic with thumb loop",
+      "Support": "Wrist & thumb CMC",
+      "Closure": "Hook & loop"
+    },
+    "newArrival": true,
+    "enabled": true
+  }
+]

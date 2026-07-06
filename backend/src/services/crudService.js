@@ -1,0 +1,3 @@
+const {getPagination}=require('../utils/pagination');
+class CrudService{constructor(repo){this.repo=repo} async create(data){return this.repo.create(data)} async get(id,populate=''){return this.repo.findById(id,populate)} async update(id,data){return this.repo.update(id,data)} async delete(id){return this.repo.softDelete(id)} async restore(id){return this.repo.restore(id)} async list(query={},filter={},populate=''){const {page,limit,skip}=getPagination(query); const q={...filter}; if(query.search){q.$text={$search:query.search}} const [items,total]=await Promise.all([this.repo.list(q,{skip,limit,populate,sort:query.sort||'-createdAt'}),this.repo.count(q)]); return {items,pagination:{page,limit,total,pages:Math.ceil(total/limit)}}}}
+module.exports=CrudService;

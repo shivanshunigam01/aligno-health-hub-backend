@@ -1,0 +1,4 @@
+const mongoose=require('mongoose');
+const softDelete={isDeleted:{type:Boolean,default:false,index:true},deletedAt:Date};
+
+const couponSchema=new mongoose.Schema({code:{type:String,required:true,unique:true,uppercase:true,index:true},description:String,type:{type:String,enum:['percentage','flat'],required:true},value:{type:Number,required:true},expiresAt:Date,startsAt:Date,usageLimit:{type:Number,default:0},usedCount:{type:Number,default:0},perUserLimit:{type:Number,default:1},minimumAmount:{type:Number,default:0},maximumDiscount:{type:Number,default:0},isActive:{type:Boolean,default:true,index:true},applicableProducts:[{type:mongoose.Schema.Types.ObjectId,ref:'Product'}],applicableCategories:[{type:mongoose.Schema.Types.ObjectId,ref:'Category'}],...softDelete},{timestamps:true}); module.exports=mongoose.model('Coupon',couponSchema);
